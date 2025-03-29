@@ -1,0 +1,361 @@
+/* @import url('https://fonts.cdnfonts.com/css/calistoga-2');
+@import url('https://fonts.cdnfonts.com/css/raleway-5'); */
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Montserrat&family=Raleway&display=swap');
+                
+*{
+    margin: 0;padding: 0;
+}
+body{
+    font-family: 'Calistoga', sans-serif;
+    background: #fcfaee;
+}
+/* Comman class */
+.green{
+    color: #325437;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+    color:#706969;  
+
+}
+.red-link{
+    color:#f3403a;
+    font-weight: 200;
+    font-size: 1rem;
+}
+.bg-green{
+    background: #325437;
+}
+
+a .active-link:active{
+      color: red;
+}
+
+.navbar{
+    position: absolute;
+    background: transparent!important;
+    width: 100%;
+    z-index: 10;
+    color: #fff;
+
+}
+
+.logo{
+    color:#fff
+}
+.navbar a, .navbar img{
+    color: #fff!important;
+
+}
+.nav-link{
+    border-bottom: 1px dashed transparent;
+}
+.nav-link:hover{
+    
+    border-bottom: #fff 2px dashed ;
+}
+
+/* media query for navbar  */
+@media(max-width:981px){
+    .navbar-expand-lg ul{
+        width: 100%!important;
+        padding: 10px;
+        background-color: #000;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar a:hover{
+        background-color: #325437;
+    }
+}
+
+
+
+/* TExt cenetr  */
+.stroke {
+    font-size: 13rem;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: #f5efef;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 13px;
+    font-family: Impact, Charcoal, sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
+  
+}
+@media(max-width:900px){
+    .stroke{
+        font-size: 10rem;
+    }
+}
+@media(max-width:800px){
+    .stroke{
+        font-size: 8rem;
+    }
+}
+@media(max-width:700px){
+    .stroke{
+        font-size: 6rem;
+    }
+}
+@media(max-width:550px){
+    .stroke{
+        font-size: 4.5rem;
+    }
+}
+@media(max-width:455px){
+    .stroke{
+        display: none;
+    }
+}
+
+/* indicator left corner center */
+.carousel-indicators {
+ 
+    top: 0%;
+    flex-direction: column;
+    margin-right: 100%;
+    margin-left: 5%;
+}
+/* Dotts */
+
+.carousel-indicators [data-bs-target] {
+    width: 0;
+    text-indent: 0px;
+}
+.carousel-indicators span{
+    text-indent: 5px;
+    font-size: 12px;
+    font-weight: 200;
+    font-family: 'Raleway', sans-serif;
+}
+
+.carousel-caption {
+    transform: translateY(-50%);
+    bottom:initial;
+    top: 50%;
+}
+
+.carousel-control-prev ,.carousel-control-next{
+    display: none;
+}
+
+/* cards */
+ .owl-carousel .card{
+    background-color: transparent!important;
+    border-radius: 20px;
+    overflow: hidden;
+ }
+.nav-link-card {
+    text-decoration: none;
+    color: #325437;
+}
+
+/* green house */
+.grren-house{
+    margin-top: -60px;
+}
+.margin{
+    margin-left: 5.5rem!important;
+}
+.video{
+    width: 100%;
+}
+.margin-bottom-img {
+    margin-left: 5rem!important;
+}
+
+.margin-2{
+    margin-top: 300px;
+}
+
+/* img on green house none  */
+@media (max-width: 1398px) {
+    .video{
+        text-align: center;
+    }
+    .margin-2{
+        display: none;
+    }
+
+  }
+
+/* bg */
+.bg-img{
+    background-image: url('Img/bcgr-h4-counter.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+
+}
+#green-bg-img-text{
+    height: 500px;
+
+}
+#green-bg-img-text h1{
+        font-size: 3.5rem;
+        text-align: center;
+}
+#green-bg-img-text h5{
+    font-size: 1.5rem;
+    text-align: center;
+}
+@media (max-width: 800px){
+         #green-bg-img-text{
+            flex-direction: column!important;
+         }
+}
+
+/*natural  */
+@media (max-width: 540px) {
+    .display-none{
+        display: none;
+    }
+
+  }
+
+
+.flx-content a ,.review-section-2 a ,.heritage a ,.table a{
+    text-decoration:none;
+    border-bottom: 1.6px dashed;
+}
+.flx-content h3{
+    margin-top: 50px!important;
+    text-align: center;
+
+}
+.flx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 30px;
+ 
+}
+
+@media (max-width: 900px) {
+    .flx{
+      flex-direction: column;
+    }
+   .flx .right-border{
+        border: none;
+    }
+  }
+.right-border{
+    border-right: #325437 1.5px dashed;
+}
+
+/* review */
+#reviews{
+     margin-top: 100px!important;
+}
+@media (max-width:800px){
+    #reviews{
+        margin-top: 50px!important;
+   }
+
+}
+.height-review
+{   
+    border: 2px dashed rgb(122, 110, 110);
+    border-radius: 30px;
+}
+.review-section-1  {
+    
+    background-color: #a7bb89;
+    
+}
+.review-section-2 {
+    background-color: #a7c9ce;
+}
+.review-section-2  a .dashed{
+    margin-top: 20px!important;
+    text-decoration-style: dotted!important;
+    
+}
+
+/* gallery */
+.gallery-flex .btn{
+    padding: 0;
+    border: 0px solid transparent;
+}
+
+/* gallery flex media  */
+
+@media (max-width:1470px) {
+    .gallery-flex{
+      flex-wrap: wrap;
+    }
+}
+
+
+.dotted{
+    border:#fff 2px dashed!important;
+    margin: 45px;
+}
+footer p{
+    color:#575757;
+  
+}
+.border-footer{
+    border-top: #325437 1px dashed;
+    width: 100%;  
+}
+.border-footer .bottom-btn {
+   outline-width: 2px;
+    outline-style: solid;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* gallery.html page */
+.gallery img :hover{
+      opacity: 0.5;
+}
+.modal-content{
+    background-color: rgba(0, 0, 0, 0.7)!important;
+}
+
+/* heritage */
+table tr td{
+    font-size: 0.7rem;
+
+}
+
+
+/* About */
+.accordion-button:not(.collapsed) {
+     color: #080808;
+    background-color:transparent;
+}
+#accordionExample{  
+      background-color:transparent!important;
+    }
+
+/* contact us */
+.contact_form{
+
+     border-radius: 10px;
+     box-shadow: 5px 10px 18px #888888;
+
+}
+
+    /* Form login */
+@media(max-width: 0px){
+  .form-media{
+        width: 100%!important;
+}
+.form-media textarea{
+    width: 100%!important;
+}
+}
+
+/* Sign up */
+.form-control{
+    transition: none!important;
+}
+
+embed{
+    width: 100%;
+}
